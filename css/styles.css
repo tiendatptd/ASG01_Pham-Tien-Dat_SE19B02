@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin: 40px;
+    padding: 40px;
+    background-color: #e0f7fa;
+}
+.profile-picture {
+    margin-left: auto;
+    display: inline-block;
+}
+.profile-picture img {
+    width: 113px;
+    height: 113px;
+}
+.personal-info {
+    flex: 1;
+    display: inline-block;
+}
+.personal-info h1 {
+    color: #0e2452;
+    margin: 0;
+}
+.personal-info p {
+    margin: 5px 0;
+}
+.career-goal, .section {
+    margin: 40px;
+    padding: 40px;
+    border-bottom: 1px solid #000;
+}
+.section-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    margin-bottom: 10px;
+}
+.entry {
+    margin: 40px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+.entry p {
+    margin: 0;
+}
+.entry-content {
+    flex: 1;
+    margin-left: 20px;
+}
+.entry-date {
+    flex: 0 0 150px;
+}
+.timeline {
+    position: relative;
+    padding-left: 40px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 2px;
+    background: #000;
+}
+.timeline .entry {
+    position: relative;
+}
+.timeline .entry::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #000;
+}
+
